@@ -1,0 +1,13 @@
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\bin\Debug\EDS.Infrastructure.Data.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\bin\Debug\EDS.Infrastructure.Data.pdb
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\bin\Debug\EntityFramework.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\bin\Debug\EDS.Domain.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\bin\Debug\EDS.Domain.pdb
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.Migrations.Initial.resources
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.csproj.GenerateResource.cache
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.csproj.CopyComplete
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Infrastructure.Data\obj\Debug\EDS.Infrastructure.Data.pdb

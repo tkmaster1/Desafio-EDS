@@ -1,0 +1,6 @@
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Domain\bin\Debug\EDS.Domain.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Domain\bin\Debug\EDS.Domain.pdb
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Domain\obj\Debug\EDS.Domain.csprojAssemblyReference.cache
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Domain\obj\Debug\EDS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Domain\obj\Debug\EDS.Domain.dll
+C:\Users\tkmas\OneDrive\Documentos\Exemplos de Projetos\SlnDesafioEDS\EDS.Domain\obj\Debug\EDS.Domain.pdb

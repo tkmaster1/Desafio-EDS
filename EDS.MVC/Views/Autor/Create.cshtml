@@ -1,0 +1,83 @@
+﻿@model EDS.MVC.ViewModels.AutorViewModel
+
+@{
+    Layout = null;
+    ViewBag.Title = "Inclusão de Autor";
+}
+
+@using (Html.BeginForm("Create", "Autor", FormMethod.Post, new { @id = "form" }))
+{
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Inclusão de Autor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="modal-body">
+                <text class="text-danger">@ViewBag.Error</text>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-8 col-sm-12">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Nome, new { @class = "control-label col-md-3" })
+                                        <div class="col-md-11">
+                                            @Html.TextBoxFor(model => model.Nome, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Nome, string.Empty, new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="btnIncluirAutor">Salvar</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+
+    <script type="text/javascript">
+
+        $("#btnIncluirAutor").click(function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("Create", "Autor")",
+                data:   $('#form').serialize(),
+                success: function (result) {
+                    if (result.success) {
+                       // window.location = window.location;
+                        $('#modalAutor').modal('hide');
+                        bootbox.alert('Inclusão realizada com sucesso.');
+
+                    } else {
+                        if (result.error == null) {
+                            $('#modalAutor').html(result);
+                        } else {
+                            var r = result.error.split('|');
+                            bootbox.alert(r[1]);
+                        }
+
+                        return false;                       
+                    }
+                },
+                error: function (errormessage) {
+                    console.log(errormessage.responseText);
+                    bootbox.alert('O servidor não pôde processar a solicitação');
+                    return false;
+                }
+            });
+        });
+
+    </script>
+}

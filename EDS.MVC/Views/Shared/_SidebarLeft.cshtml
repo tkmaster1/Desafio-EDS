@@ -1,0 +1,51 @@
+﻿ <!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="@Url.Action("Index", "Home")" class="brand-link">
+        <img src="~/Content/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+             style="opacity: .8">
+        <span class="brand-text font-weight-light">E.D.S.</span>
+    </a>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                with font-awesome or any other icon font library -->
+                <li class="nav-header"><i class="nav-icon fa fa-fw fa-wrench"></i>&nbsp;FERRAMENTAS</li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link active">
+                        &nbsp;&nbsp;<i class="nav-icon fas fa-table"></i>
+                        <p>
+                            Parametrização
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Livro")" class="nav-link">
+                                &nbsp;&nbsp;&nbsp;<i class="fas fa-book nav-icon"></i>
+                                <p>Livros</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Autor")" class="nav-link">
+                                &nbsp;&nbsp;&nbsp;<i class="fas fa-users fa-1x fa-fw nav-icon"></i>
+                                <p>Autores</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Index", "Assunto")" class="nav-link">
+                                &nbsp;&nbsp;&nbsp;<i class="nav-icon fas fa-envelope"></i>
+                                <p>Assuntos</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>

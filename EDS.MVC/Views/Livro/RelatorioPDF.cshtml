@@ -1,0 +1,121 @@
+﻿@model IEnumerable<EDS.MVC.ViewModels.LivroViewModel>
+
+@{
+    Layout = null;
+    ViewBag.Title = "Relatório PDF - Livro";
+}
+
+<h2>Relatório PDF - Livro</h2>
+@*<div class="container-fluid">
+     DataTables Example
+    <div class="card mb-3">*@
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered" id="dtLivro" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Título
+                    </th>
+                    <th style="width:250px; text-align-last:center;">
+                        Editora
+                    </th>
+                    <th style="width:150px; text-align-last:center;">
+                        Ano de Publicação
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Titulo)
+                        </td>
+                        <td style="width:100px; text-align-last:center;">
+                            @Html.DisplayFor(modelItem => item.Editora)
+                        </td>
+                        <td style="width:100px; text-align-last:center;">
+                            @Html.DisplayFor(model => item.AnoPublicacao)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@*     </div>
+    </div>*@
+
+@*@model PagedList.IPagedList<Mvc5_RelatoriosPDF.Models.Cliente>
+
+    <h2>Relação de Clientes</h2>
+
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+            </tr>
+        }
+        <tr>
+            <td><b>@Model.Count registros de @Model.TotalItemCount</b></td>
+            <td><a href="/Relatorios/RelatorioClientes?pdf=true"><b>Gerar Relatório em PDF</b></a></td>
+        </tr>
+    </table>
+
+    @{
+        if (Model.TotalItemCount != Model.Count)
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+
+                    @if (Model.HasPreviousPage)
+                    {
+                        @Html.ActionLink("<<", "RelatorioClientes", new { pagina = 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+                        @Html.Raw(" ");
+                        @Html.ActionLink("< Anterior", "RelatorioClientes", new { pagina = Model.PageNumber - 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+                    }
+                    else
+                    {
+                        @:<<
+                        @Html.Raw(" ");
+                        @:< Anterior
+                    }
+
+                    @if (Model.HasNextPage)
+                    {
+                        @Html.ActionLink("Próxima >", "RelatorioClientes", new { pagina = Model.PageNumber + 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+                        @Html.Raw(" ");
+                        @Html.ActionLink(">>", "RelatorioClientes", new { pagina = Model.PageCount, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+                    }
+                    else
+                    {
+                        @:Próxima >
+                        @Html.Raw(" ")
+                        @:>>
+                    }
+                </div>
+            </div>
+        }
+    }*@
+
